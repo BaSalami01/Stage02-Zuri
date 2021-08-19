@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+
+nav {
+    background-color: #cc342c;
+    border-bottom: 5px solid #3b3b3b;
+    position: relative;
+    color: #f5f5f5;
+}
+
+.nav-row {
+    display: flex;
+}
+.nav-col {
+    width: 50%;
+}
+.nav-col-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav>.nav-row>.nav-col>h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    letter-spacing: 0.2em;
+}
+
+nav>.nav-row>.nav-col>h1:hover {
+    cursor: pointer;
+    color: #3b3b3b;
+}
+
+#offName {
+    display: none;
+}
+
+nav>.nav-row>.nav-col>h1,
+nav>.nav-row>.nav-col>p {
+    margin-left: 20px;
+}
+
+nav>.nav-row>.nav-col>p {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+nav>.nav-row>.nav-col.nav-col-right>span {
+    margin-top: 100px;
+    margin-right: 20px;
+    font-size: 22px;
+}
+
+nav>.nav-row>.nav-col.nav-col-right>span>a {
+    color: #f5f5f5;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav>.nav-row>.nav-col.nav-col-right>span>a:hover {
+    color: #000;
+}
+
+nav>.nav-row>.nav-col.nav-col-right>img {
+    margin: 20px;
+}
+
+.leftSide>aside>#contact>.lineSpace>p>a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.leftSide>aside>#contact>.lineSpace>p>a:hover {
+    color: #cc342c;
+}
+
+section {
+    margin-top: 20px;
+    margin-right: 20px;
+    display: inline-block; 
+    border-bottom: 5px solid #3b3b3b;
+    margin-left: 20px;
+}
+
+section>p {
+    width: 80%;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+.rightSide {
+    margin-top: 20px;
+    padding-left: 30px;
+    float: right;
+    width: 60%;
+    line-height: 1.5;
+}
+
+#volunteer {
+    border-top: 5px solid #3b3b3b;
+    width: 40%;
+}
+
+
+.leftSide {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-right: 20px;
+    float: left;
+    width: 30%;
+    line-height: 1.5;
+    border-right: 5px solid #cc342c;
+    overflow-wrap: break-word;
+}
+
+h3 {
+    text-decoration: underline #cc342c;
+    color: #3b3b3b;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+#contact,
+#education {
+    text-align: left;
+    border-bottom: 5px solid #3b3b3b;
+}
+
+.lineSpace {
+    line-height: 1.5em;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #3b3b3b;
+    width: 100%;
+    color: #f5f5f5;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 768px) {
+    .desktop {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    html,
+    body {
+        height: 100%;
+    }
+
+    nav>.nav-row>.nav-col>h1 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 28px;
+        letter-spacing: 0.05em;
+        margin-top: 10px;
+    }
+    
+    nav>.nav-row>.nav-col>h1,
+    nav>.nav-row>.nav-col>p {
+    margin-left: 10px;
+    }
+
+    nav>.nav-row>.nav-col>p {
+    font-size: 20px;
+    }
+
+    nav>.nav-row>.nav-col.nav-col-right>span {
+        display: none;
+    }
+
+    nav>.nav-row>.nav-col.nav-col-right>img {
+        margin-right: 10px;
+        margin-top: 10px;
+        padding-right: 10px;
+    }
+
+    
+    .rightSide{
+    margin-left: 20px;
+    width: 100%;
+    float: left;
+    line-height: 1.5;
+    padding-left: 0;
+    }
+
+    .rightSide>main>.lineSpace>p {
+        margin-bottom: 20px;
+    }
+
+    #volunteer {
+    width: 90%;
+    border-top: none;
+    border-bottom: 5px solid #3b3b3b;
+    }
+
+    .leftSide {
+        border-right: none;
+        width: 90%;
+        margin-left: 20px;
+    }
+}
